@@ -9,6 +9,7 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 #import <NCMB/NCMB.h>
+#include <ifaddrs.h>
 
 
 #endif /* Bridging_Header_h */

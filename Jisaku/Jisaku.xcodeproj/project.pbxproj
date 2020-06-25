@@ -8,23 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7212E13809E4BECD52778B69 /* Pods_Jisaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31B3537630DDE17859E5711 /* Pods_Jisaku.framework */; };
+		EB15045A24A194DA005850ED /* ResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15045924A194DA005850ED /* ResponseViewController.swift */; };
+		EB15045C24A1BB9A005850ED /* PostResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15045B24A1BB9A005850ED /* PostResponseViewController.swift */; };
 		EBB5059224A040DD00410CBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5059124A040DD00410CBB /* AppDelegate.swift */; };
 		EBB5059424A040DD00410CBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5059324A040DD00410CBB /* SceneDelegate.swift */; };
 		EBB5059624A040DD00410CBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5059524A040DD00410CBB /* ViewController.swift */; };
 		EBB5059924A040DD00410CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB5059724A040DD00410CBB /* Main.storyboard */; };
 		EBB5059B24A040E000410CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB5059A24A040E000410CBB /* Assets.xcassets */; };
 		EBB5059E24A040E000410CBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB5059C24A040E000410CBB /* LaunchScreen.storyboard */; };
-		EBB505AD24A0544A00410CBB /* TimeLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB505AB24A0544A00410CBB /* TimeLineCollectionViewCell.swift */; };
-		EBB505AE24A0544A00410CBB /* TimeLineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB505AC24A0544A00410CBB /* TimeLineCollectionViewCell.xib */; };
-		EBB505B024A06BAC00410CBB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB505AF24A06BAC00410CBB /* SearchViewController.swift */; };
-		EBB505B424A06D0300410CBB /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB505B324A06D0300410CBB /* SearchResultViewController.swift */; };
-		EBB505B624A06F2000410CBB /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB505B524A06F2000410CBB /* PostViewController.swift */; };
 		EBB505B824A070AD00410CBB /* PostResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB505B724A070AD00410CBB /* PostResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0136A36CA39D3820ACC4CA04 /* Pods-Jisaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jisaku.release.xcconfig"; path = "Target Support Files/Pods-Jisaku/Pods-Jisaku.release.xcconfig"; sourceTree = "<group>"; };
 		C3CC631C500E571FC1502911 /* Pods-Jisaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jisaku.debug.xcconfig"; path = "Target Support Files/Pods-Jisaku/Pods-Jisaku.debug.xcconfig"; sourceTree = "<group>"; };
+		EB15045924A194DA005850ED /* ResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewController.swift; sourceTree = "<group>"; };
+		EB15045B24A1BB9A005850ED /* PostResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponseViewController.swift; sourceTree = "<group>"; };
 		EBB5058E24A040DD00410CBB /* Jisaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jisaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB5059124A040DD00410CBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB5059324A040DD00410CBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,11 +33,6 @@
 		EBB5059D24A040E000410CBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB5059F24A040E000410CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB505A624A041C500410CBB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		EBB505AB24A0544A00410CBB /* TimeLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCollectionViewCell.swift; sourceTree = "<group>"; };
-		EBB505AC24A0544A00410CBB /* TimeLineCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineCollectionViewCell.xib; sourceTree = "<group>"; };
-		EBB505AF24A06BAC00410CBB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		EBB505B324A06D0300410CBB /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
-		EBB505B524A06F2000410CBB /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		EBB505B724A070AD00410CBB /* PostResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResultViewController.swift; sourceTree = "<group>"; };
 		F31B3537630DDE17859E5711 /* Pods_Jisaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jisaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,16 +91,13 @@
 				EBB5059324A040DD00410CBB /* SceneDelegate.swift */,
 				EBB5059524A040DD00410CBB /* ViewController.swift */,
 				EBB5059724A040DD00410CBB /* Main.storyboard */,
-				EBB505B324A06D0300410CBB /* SearchResultViewController.swift */,
-				EBB505AF24A06BAC00410CBB /* SearchViewController.swift */,
 				EBB5059A24A040E000410CBB /* Assets.xcassets */,
 				EBB5059C24A040E000410CBB /* LaunchScreen.storyboard */,
 				EBB5059F24A040E000410CBB /* Info.plist */,
 				EBB505A624A041C500410CBB /* Bridging-Header.h */,
-				EBB505AB24A0544A00410CBB /* TimeLineCollectionViewCell.swift */,
-				EBB505AC24A0544A00410CBB /* TimeLineCollectionViewCell.xib */,
-				EBB505B524A06F2000410CBB /* PostViewController.swift */,
 				EBB505B724A070AD00410CBB /* PostResultViewController.swift */,
+				EB15045924A194DA005850ED /* ResponseViewController.swift */,
+				EB15045B24A1BB9A005850ED /* PostResponseViewController.swift */,
 			);
 			path = Jisaku;
 			sourceTree = "<group>";
@@ -172,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB5059E24A040E000410CBB /* LaunchScreen.storyboard in Resources */,
-				EBB505AE24A0544A00410CBB /* TimeLineCollectionViewCell.xib in Resources */,
 				EBB5059B24A040E000410CBB /* Assets.xcassets in Resources */,
 				EBB5059924A040DD00410CBB /* Main.storyboard in Resources */,
 			);
@@ -227,14 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB505B624A06F2000410CBB /* PostViewController.swift in Sources */,
-				EBB505B024A06BAC00410CBB /* SearchViewController.swift in Sources */,
+				EB15045C24A1BB9A005850ED /* PostResponseViewController.swift in Sources */,
 				EBB5059624A040DD00410CBB /* ViewController.swift in Sources */,
 				EBB5059224A040DD00410CBB /* AppDelegate.swift in Sources */,
-				EBB505AD24A0544A00410CBB /* TimeLineCollectionViewCell.swift in Sources */,
 				EBB505B824A070AD00410CBB /* PostResultViewController.swift in Sources */,
-				EBB505B424A06D0300410CBB /* SearchResultViewController.swift in Sources */,
 				EBB5059424A040DD00410CBB /* SceneDelegate.swift in Sources */,
+				EB15045A24A194DA005850ED /* ResponseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +367,9 @@
 			baseConfigurationReference = C3CC631C500E571FC1502911 /* Pods-Jisaku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WSTVQB6Y6X;
 				INFOPLIST_FILE = Jisaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,6 +377,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Jisaku";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jisaku/Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Jisaku/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WSTVQB6Y6X;
 				INFOPLIST_FILE = Jisaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,6 +399,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.al-j.Jisaku";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jisaku/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
