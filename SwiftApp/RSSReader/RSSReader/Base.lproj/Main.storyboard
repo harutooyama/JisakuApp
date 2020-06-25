@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-FW-mkr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Yahoo! 最新ニュース" id="yfc-Zf-TNX">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="65i-Jk-Tyt">
+                                            <connections>
+                                                <action selector="refreshList:" destination="BYZ-38-t0r" id="0xM-6a-p6Z"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-Lv-xkP">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" id="esK-M8-NPp">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="esK-M8-NPp" id="ChQ-Oc-Lxb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e1-88-eHq">
+                                                    <rect key="frame" x="15" y="11" width="324" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時刻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-Gj-tR4">
+                                                    <rect key="frame" x="15" y="38" width="324" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hbh-FW-mkr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Up-vy-DiR"/>
+                            <constraint firstItem="XvR-Lv-xkP" firstAttribute="top" secondItem="hbh-FW-mkr" secondAttribute="bottom" id="7vt-v1-mNn"/>
+                            <constraint firstItem="hbh-FW-mkr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cxf-D0-xCe"/>
+                            <constraint firstItem="XvR-Lv-xkP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eht-ZY-CNw"/>
+                            <constraint firstItem="XvR-Lv-xkP" firstAttribute="top" secondItem="hbh-FW-mkr" secondAttribute="bottom" id="PBv-3s-KdZ"/>
+                            <constraint firstItem="XvR-Lv-xkP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="PRv-gd-gBH"/>
+                            <constraint firstItem="hbh-FW-mkr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hbr-cp-ugA"/>
+                            <constraint firstItem="XvR-Lv-xkP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ooI-PY-qC5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="XvR-Lv-xkP" id="R7Z-vW-nce"/>
+                        <segue destination="WMv-2X-Qm1" kind="presentation" identifier="toDetailView" id="rBT-c4-6e6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="pun-qu-fca" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="121.88905547226388"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="KYw-cN-NYy">
+            <objects>
+                <viewController id="WMv-2X-Qm1" customClass="NewsDetailViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fj0-pD-f9U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kp8-td-A7C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <items>
+                                    <navigationItem title="ニュース詳細" id="axi-QP-dxq">
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" id="P9K-sR-U0X">
+                                            <connections>
+                                                <segue destination="pun-qu-fca" kind="unwind" unwindAction="backViewWithSegue:" id="XzK-gN-X0N"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0q-V7-S0c">
+                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f0q-V7-S0c" firstAttribute="top" secondItem="kp8-td-A7C" secondAttribute="bottom" id="0Co-7M-rg5"/>
+                            <constraint firstItem="kp8-td-A7C" firstAttribute="top" secondItem="8bX-Xu-5tj" secondAttribute="top" id="33Q-gB-iQm"/>
+                            <constraint firstItem="f0q-V7-S0c" firstAttribute="top" secondItem="kp8-td-A7C" secondAttribute="bottom" id="9bh-MP-h0B"/>
+                            <constraint firstItem="f0q-V7-S0c" firstAttribute="bottom" secondItem="8bX-Xu-5tj" secondAttribute="bottom" id="Bfk-bI-igG"/>
+                            <constraint firstItem="kp8-td-A7C" firstAttribute="leading" secondItem="8bX-Xu-5tj" secondAttribute="leading" id="IuY-a3-jPj"/>
+                            <constraint firstItem="f0q-V7-S0c" firstAttribute="leading" secondItem="8bX-Xu-5tj" secondAttribute="leading" id="ffA-Ea-Wgf"/>
+                            <constraint firstItem="kp8-td-A7C" firstAttribute="trailing" secondItem="8bX-Xu-5tj" secondAttribute="trailing" id="wPD-a9-cAL"/>
+                            <constraint firstItem="f0q-V7-S0c" firstAttribute="trailing" secondItem="8bX-Xu-5tj" secondAttribute="trailing" id="zq0-4H-nKc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8bX-Xu-5tj"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailWebView" destination="f0q-V7-S0c" id="vlA-iy-AoK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O99-nk-Dea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.39999999999998" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>

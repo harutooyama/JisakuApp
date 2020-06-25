@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3M-j2-Qxc">
+                                <rect key="frame" x="15" y="517" width="177.5" height="183.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U3M-j2-Qxc" secondAttribute="height" multiplier="1:1" constant="-6" id="dIT-uO-ofD"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_plus.png"/>
+                                <connections>
+                                    <action selector="plusPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jlq-Be-N8x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEI-O8-fWS">
+                                <rect key="frame" x="15" y="707.5" width="384" height="129.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QEI-O8-fWS" secondAttribute="height" multiplier="297:100" id="t8L-dv-lUo"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_reset.png"/>
+                                <connections>
+                                    <action selector="resetPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WvW-By-AQh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hus-CQ-2gz">
+                                <rect key="frame" x="226" y="520" width="173" height="172.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hus-CQ-2gz" secondAttribute="height" multiplier="1:1" id="sW1-pp-A3n"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_minus.png"/>
+                                <connections>
+                                    <action selector="minusPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAD-In-Co2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-Oz-cFR">
+                                <rect key="frame" x="10" y="54" width="394" height="453"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VVb-Oz-cFR" secondAttribute="trailing" constant="10" id="3ZK-Tl-4gN"/>
+                            <constraint firstItem="QEI-O8-fWS" firstAttribute="top" secondItem="hus-CQ-2gz" secondAttribute="bottom" constant="15" id="56T-9X-OdJ"/>
+                            <constraint firstItem="QEI-O8-fWS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6pg-6f-zL5"/>
+                            <constraint firstItem="U3M-j2-Qxc" firstAttribute="width" secondItem="QEI-O8-fWS" secondAttribute="width" multiplier="0.45" constant="4.75" id="Abu-de-cFd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QEI-O8-fWS" secondAttribute="bottom" constant="25" id="ELf-Wz-oR6"/>
+                            <constraint firstItem="QEI-O8-fWS" firstAttribute="leading" secondItem="U3M-j2-Qxc" secondAttribute="leading" id="Nkc-j2-fM9"/>
+                            <constraint firstItem="VVb-Oz-cFR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Xj2-b2-iJz"/>
+                            <constraint firstItem="hus-CQ-2gz" firstAttribute="width" secondItem="QEI-O8-fWS" secondAttribute="width" multiplier="0.45" id="cV2-Zz-oJi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QEI-O8-fWS" secondAttribute="trailing" constant="15" id="hNl-Wr-jRt"/>
+                            <constraint firstItem="VVb-Oz-cFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="m19-Wp-mdR"/>
+                            <constraint firstItem="VVb-Oz-cFR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mmi-F2-AQg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VVb-Oz-cFR" secondAttribute="trailing" constant="10" id="nLN-tU-aJ9"/>
+                            <constraint firstItem="QEI-O8-fWS" firstAttribute="trailing" secondItem="hus-CQ-2gz" secondAttribute="trailing" id="naq-Dj-Qjh"/>
+                            <constraint firstItem="U3M-j2-Qxc" firstAttribute="top" secondItem="VVb-Oz-cFR" secondAttribute="bottom" constant="10" id="pBi-jZ-Z5D"/>
+                            <constraint firstItem="U3M-j2-Qxc" firstAttribute="top" secondItem="VVb-Oz-cFR" secondAttribute="bottom" constant="10" id="pnL-HA-TdQ"/>
+                            <constraint firstItem="QEI-O8-fWS" firstAttribute="top" secondItem="U3M-j2-Qxc" secondAttribute="bottom" constant="7" id="x0l-UE-2bf"/>
+                            <constraint firstItem="VVb-Oz-cFR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xSI-h6-ojy"/>
+                            <constraint firstItem="VVb-Oz-cFR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="xVO-kv-8cc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="VVb-Oz-cFR" id="Kis-FR-83c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_minus.png" width="150" height="150"/>
+        <image name="btn_plus.png" width="150" height="150"/>
+        <image name="btn_reset.png" width="354" height="130"/>
+    </resources>
+</document>

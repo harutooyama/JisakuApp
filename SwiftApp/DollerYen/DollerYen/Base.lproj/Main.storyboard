@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DollerYen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ドル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2c-SH-KvC">
+                                <rect key="frame" x="326" y="597" width="34" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="9w4-7P-5qc"/>
+                                    <constraint firstAttribute="height" constant="21" id="F4o-JJ-yWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMI-FY-D2h">
+                                <rect key="frame" x="13" y="577" width="299" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hh3-pw-ohz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUK-H3-SG4">
+                                <rect key="frame" x="320" y="65" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0PS-gO-rtA"/>
+                                    <constraint firstAttribute="width" constant="40" id="dYr-QM-Rnp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変換レート:1ドル=            円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao6-v3-fBw">
+                                <rect key="frame" x="15" y="105" width="345" height="199.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmD-EO-Unm">
+                                <rect key="frame" x="15" y="60" width="290" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aWn-ED-6nA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Evj-BY-Ldj">
+                                <rect key="frame" x="15" y="319.5" width="345" height="29"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="y7I-NK-pou"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="円→ドル"/>
+                                    <segment title="ドル→円"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeCalcMethod:" destination="BYZ-38-t0r" eventType="valueChanged" id="mfs-dn-1km"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo8-AR-L9p">
+                                <rect key="frame" x="248" y="105" width="19" height="199.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Evj-BY-Ldj" firstAttribute="top" secondItem="Yo8-AR-L9p" secondAttribute="bottom" constant="15" id="2NO-Ii-xVd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Evj-BY-Ldj" secondAttribute="trailing" constant="15" id="46k-z3-EQP"/>
+                            <constraint firstItem="ao6-v3-fBw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="5Fl-QA-Keu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EMI-FY-D2h" secondAttribute="bottom" constant="50" id="6ff-Dz-JOf"/>
+                            <constraint firstItem="gmD-EO-Unm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="8fV-wj-jZp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c2c-SH-KvC" secondAttribute="bottom" constant="49" id="9Iw-MA-hbK"/>
+                            <constraint firstItem="fUK-H3-SG4" firstAttribute="leading" secondItem="gmD-EO-Unm" secondAttribute="trailing" constant="15" id="9gY-sK-ZxS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fUK-H3-SG4" secondAttribute="trailing" constant="15" id="Jw0-Rt-5E1"/>
+                            <constraint firstItem="Yo8-AR-L9p" firstAttribute="top" secondItem="gmD-EO-Unm" secondAttribute="bottom" constant="15" id="LBv-RS-WP1"/>
+                            <constraint firstItem="Evj-BY-Ldj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MW6-C9-vcN"/>
+                            <constraint firstItem="gmD-EO-Unm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Tb4-ZQ-cOf"/>
+                            <constraint firstItem="c2c-SH-KvC" firstAttribute="leading" secondItem="EMI-FY-D2h" secondAttribute="trailing" constant="14" id="U71-4F-KLF"/>
+                            <constraint firstItem="Evj-BY-Ldj" firstAttribute="top" secondItem="ao6-v3-fBw" secondAttribute="bottom" constant="15" id="VAm-1v-HUI"/>
+                            <constraint firstItem="ao6-v3-fBw" firstAttribute="top" secondItem="gmD-EO-Unm" secondAttribute="bottom" constant="15" id="Yyf-ff-VMy"/>
+                            <constraint firstItem="fUK-H3-SG4" firstAttribute="leading" secondItem="gmD-EO-Unm" secondAttribute="trailing" constant="15" id="dKm-YT-tPq"/>
+                            <constraint firstItem="Yo8-AR-L9p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="dg9-KB-Naf"/>
+                            <constraint firstItem="Evj-BY-Ldj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="e6o-PB-QEz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ao6-v3-fBw" secondAttribute="trailing" constant="15" id="fLV-KI-JOz"/>
+                            <constraint firstItem="EMI-FY-D2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="gIN-du-T6j"/>
+                            <constraint firstItem="c2c-SH-KvC" firstAttribute="leading" secondItem="EMI-FY-D2h" secondAttribute="trailing" constant="14" id="h8u-gr-lwJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2c-SH-KvC" secondAttribute="trailing" constant="15" id="nos-z3-4pn"/>
+                            <constraint firstItem="fUK-H3-SG4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="q4l-40-BBv"/>
+                            <constraint firstItem="Evj-BY-Ldj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zOh-EU-hAE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputCurrency" destination="fUK-H3-SG4" id="56O-Ei-6Uh"/>
+                        <outlet property="inputField" destination="gmD-EO-Unm" id="cTe-tU-Rrt"/>
+                        <outlet property="rateLabel" destination="Yo8-AR-L9p" id="bYk-Oh-Ffz"/>
+                        <outlet property="resultCurrency" destination="c2c-SH-KvC" id="v8i-hp-8ug"/>
+                        <outlet property="resultLabel" destination="EMI-FY-D2h" id="iDd-Pk-7Vm"/>
+                        <outlet property="selector" destination="Evj-BY-Ldj" id="P5g-4Q-xFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

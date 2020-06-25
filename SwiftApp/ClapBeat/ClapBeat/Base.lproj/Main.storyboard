@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClapBeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手拍子の回数を選んでボタンをクリック" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsC-M7-U0t">
+                                <rect key="frame" x="116.5" y="344" width="181" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="Or4-bT-g4L"/>
+                                    <constraint firstAttribute="height" constant="68" id="Qlp-Le-rWP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sound" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-k8-n6p">
+                                <rect key="frame" x="88" y="74" width="238" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tpg-k8-n6p" secondAttribute="height" multiplier="99:100" id="7hg-Wx-Bw1"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uas-Rl-sIV">
+                                <rect key="frame" x="-16" y="646" width="446" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCR-To-4iy">
+                                <rect key="frame" x="15" y="404.5" width="384" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UCR-To-4iy" secondAttribute="height" multiplier="101:23" id="hhk-CO-pmu"/>
+                                </constraints>
+                                <state key="normal" image="btn_play">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="Playsender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtV-A0-zlk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UCR-To-4iy" secondAttribute="trailing" constant="15" id="1gX-UW-38y"/>
+                            <constraint firstItem="UCR-To-4iy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="BWR-Cs-4jc"/>
+                            <constraint firstItem="GsC-M7-U0t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JW2-xo-K2Q"/>
+                            <constraint firstItem="tpg-k8-n6p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OVo-0M-sA1"/>
+                            <constraint firstItem="tpg-k8-n6p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RcS-Pe-WoT"/>
+                            <constraint firstItem="Uas-Rl-sIV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Svl-Fo-M88"/>
+                            <constraint firstItem="UCR-To-4iy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9C-IK-MA8"/>
+                            <constraint firstItem="Uas-Rl-sIV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-16" id="ebR-AA-Gto"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uas-Rl-sIV" secondAttribute="trailing" constant="-16" id="mSN-js-98l"/>
+                            <constraint firstItem="GsC-M7-U0t" firstAttribute="top" secondItem="tpg-k8-n6p" secondAttribute="bottom" constant="30" id="rxX-Hb-PkF"/>
+                            <constraint firstItem="UCR-To-4iy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vOq-bB-7bY"/>
+                            <constraint firstItem="UCR-To-4iy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xSX-3v-1Nk"/>
+                            <constraint firstItem="GsC-M7-U0t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="yD1-4Q-wvl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="PickerView" destination="Uas-Rl-sIV" id="Fnu-BO-kuh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_play" width="350" height="80"/>
+        <image name="img_sound" width="99" height="101"/>
+    </resources>
+</document>
