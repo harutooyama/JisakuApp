@@ -37,9 +37,9 @@
                                     <action selector="sendMessageButtonTappedWithSender:" destination="EAv-SR-hWV" eventType="touchUpInside" id="giF-Y7-Hjz"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-6T-HOq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-6T-HOq">
                                 <rect key="frame" x="20" y="221" width="335" height="266"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="aoG-lw-AD0"/>
                                 </constraints>
@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZR-qe-yDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629.5999999999999" y="826.23688155922048"/>
+            <point key="canvasLocation" x="3561" y="869"/>
         </scene>
         <!--書き込み-->
         <scene sceneID="zuM-TG-eH1">
@@ -234,9 +234,9 @@
                                     <action selector="TouchedPost:" destination="9XL-BN-pbg" eventType="touchUpInside" id="VnP-Hc-vzM"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k6c-4D-4so">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="k6c-4D-4so">
                                 <rect key="frame" x="0.0" y="124" width="375" height="483"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Mfp-Uc-rks"/>
                                     <constraint firstAttribute="height" constant="483" id="Msk-Je-elh"/>
@@ -266,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6e-fd-rJk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629.5999999999999" y="1510.7946026986508"/>
+            <point key="canvasLocation" x="3561" y="1635"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1u5-sZ-V7y">
