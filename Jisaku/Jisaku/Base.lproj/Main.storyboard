@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--スレ作成-->
+        <!--話題作成-->
         <scene sceneID="04F-By-oRP">
             <objects>
                 <viewController id="EAv-SR-hWV" customClass="PostResultViewController" customModule="Jisaku" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,11 +37,11 @@
                                     <action selector="sendMessageButtonTappedWithSender:" destination="EAv-SR-hWV" eventType="touchUpInside" id="giF-Y7-Hjz"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-6T-HOq">
-                                <rect key="frame" x="20" y="359" width="335" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Lorem ipsum" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-6T-HOq">
+                                <rect key="frame" x="20" y="221" width="335" height="266"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="aoG-lw-AD0"/>
+                                    <constraint firstAttribute="height" constant="200" id="aoG-lw-AD0"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,7 +53,7 @@
                             <constraint firstItem="beu-kE-ESB" firstAttribute="top" secondItem="XBE-Id-uN1" secondAttribute="top" constant="20" id="22n-Hu-njF"/>
                             <constraint firstItem="beu-kE-ESB" firstAttribute="leading" secondItem="XBE-Id-uN1" secondAttribute="leading" constant="30" id="8v3-X8-cXy"/>
                             <constraint firstItem="F4a-e2-qpZ" firstAttribute="top" secondItem="wWx-l0-GXO" secondAttribute="bottom" constant="15" id="CX3-yY-5Mh"/>
-                            <constraint firstItem="XBE-Id-uN1" firstAttribute="bottom" secondItem="Xqk-6T-HOq" secondAttribute="bottom" constant="180" id="Jma-iP-VnI"/>
+                            <constraint firstItem="XBE-Id-uN1" firstAttribute="bottom" secondItem="Xqk-6T-HOq" secondAttribute="bottom" constant="200" id="Jma-iP-VnI"/>
                             <constraint firstItem="Xqk-6T-HOq" firstAttribute="centerX" secondItem="wx5-Df-c5R" secondAttribute="centerX" id="Pr2-ie-d7b"/>
                             <constraint firstItem="Xqk-6T-HOq" firstAttribute="leading" secondItem="XBE-Id-uN1" secondAttribute="leading" constant="20" id="SkP-t5-RBT"/>
                             <constraint firstItem="wWx-l0-GXO" firstAttribute="top" secondItem="XBE-Id-uN1" secondAttribute="top" constant="81" id="UNy-xt-6yy"/>
@@ -65,7 +65,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XBE-Id-uN1"/>
                     </view>
-                    <navigationItem key="navigationItem" title="スレ作成" id="ggs-4s-rmQ"/>
+                    <navigationItem key="navigationItem" title="話題作成" id="ggs-4s-rmQ"/>
                     <connections>
                         <outlet property="resLabel" destination="Xqk-6T-HOq" id="iBD-zO-ZMM"/>
                         <outlet property="themebox" destination="F4a-e2-qpZ" id="Edf-QC-eIr"/>
@@ -76,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="4487.1999999999998" y="86.806596701649184"/>
         </scene>
-        <!--スレ一覧-->
+        <!--話題一覧-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jisaku" customModuleProvider="target" sceneMemberID="viewController">
@@ -108,7 +108,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="スレ一覧" id="d6A-9M-8c8">
+                    <navigationItem key="navigationItem" title="話題一覧" id="d6A-9M-8c8">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="HhB-PH-Z1j">
                             <connections>
                                 <segue destination="EAv-SR-hWV" kind="show" identifier="toCreate" id="1Hr-SM-oo2"/>
@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="2629.5999999999999" y="826.23688155922048"/>
         </scene>
-        <!--投稿-->
+        <!--書き込み-->
         <scene sceneID="zuM-TG-eH1">
             <objects>
                 <viewController id="9XL-BN-pbg" customClass="PostResponseViewController" customModule="Jisaku" customModuleProvider="target" sceneMemberID="viewController">
@@ -229,7 +229,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1h-6A-IUV">
                                 <rect key="frame" x="40" y="59" width="295" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="投稿"/>
+                                <state key="normal" title="書き込み"/>
                                 <connections>
                                     <action selector="TouchedPost:" destination="9XL-BN-pbg" eventType="touchUpInside" id="VnP-Hc-vzM"/>
                                 </connections>
@@ -259,7 +259,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kF8-Zk-HHx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="投稿" id="q6a-kl-1TV"/>
+                    <navigationItem key="navigationItem" title="書き込み" id="q6a-kl-1TV"/>
                     <connections>
                         <outlet property="textView" destination="k6c-4D-4so" id="dD6-yI-8ZD"/>
                     </connections>
